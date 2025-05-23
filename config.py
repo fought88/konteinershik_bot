@@ -1,0 +1,3 @@
+
+BOT_TOKEN = "7725339196:AAFqx-_mYFgr5hRycqUvpYV-mjy-u6HKPBg"
+ADMIN_ID = 440017579  # твой Telegram ID
