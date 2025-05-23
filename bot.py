@@ -1,3 +1,12 @@
+import os
+import json
+
+# Сохраняем GOOGLE_CREDENTIALS_JSON как файл
+credentials_json = os.getenv("GOOGLE_CREDENTIALS_JSON")
+if credentials_json:
+    with open("google_credentials.json", "w", encoding="utf-8") as f:
+        f.write(credentials_json)
+
 from aiogram import Bot, Dispatcher, types
 from aiogram.types import Message, ReplyKeyboardMarkup, KeyboardButton, ReplyKeyboardRemove, InlineKeyboardButton, InlineKeyboardMarkup
 from aiogram.enums import ParseMode
